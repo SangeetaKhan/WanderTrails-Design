@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WanderTrails</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class ="wander-header">
+			<div class="wander-logo alignCenter">
+				<img src="img/logo.jpg" width="200px">
+			</div>
+			<div class="wander-navbar">
+				<nav class="wander-nav alignRight">
+					<ul>
+						<li>
+							<a>Home</a>
+						</li>
+						<li>
+							<a>About Us</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="wander-contactUs">
+					<p>Call us at +91 9632563535</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</header> <!--Header Ends -->
+		<section class="wander-formSection">
+			<div class="wander-img">
+				<div class="wander-text">
+					<div>Your time together <br/>defines  your togetherness</div>
+				</div>
+			</div>
+			<div class="wander-form alignCenter">
+				<form onSubmit="alert('Thank you for your submission.');" >
+					<input type="text" name="fname" placeholder="Name *" required />
+					<div>
+						<select name="cars" placeholder="Select Destination" required>
+						  <option value="default">Select Destination</option>
+						  <option value="wayanad">Wayand</option>
+						  <option value="coorg">Coorg</option>
+						  <option value="pune">Pune</option>
+						  <option value="delhi">Delhi</option>
+						</select>
+						<input type="text" name="from" placeholder="Starting From *" required />
+					</div>
+					<div class="clearfix"></div>
+					<input type="email" name="email" placeholder="Email Address *" required />
+					<input type="number" name="pnum" placeholder="Phone Number *" required/>
+
+					<div>
+						<input type="date" name="sdate" placeholder="Start Date *" required />
+						<input type="date" name="edate" placeholder="End Date *" required />
+					</div>
+					<div class="planBtn">
+						<button>Plan My Holidays</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="wander-citySection">
+			<div class="wander-cityOptions">
+				<nav class="wander-cities alignCenter">
+					<ul class="nopadding">
+						<li class="city active">
+							<a href="javascript:void(0)" onclick="showCityDetail(this,'wayanad')">Wayanad</a>
+						</li>
+						<li class="city">
+							<a href="javascript:void(0)" onclick="showCityDetail(this,'coorg')">Coorg</a>
+						</li>
+						<li class="city">
+							<a href="javascript:void(0)" onclick="showCityDetail(this,'ooty')">Ooty</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<section class="wander-recentBook">
+			<h1 class="alignCenter">- recently booked experiential stays -</h1>
+			<section class="wander-moreDetails">
+				<div class="wander-heading"></div>
+				
+			</section>
+			<section class="wander-cityImageSection">
+				<div class="wander-cityImages alignCenter">
+
+				</div>
+				<div class="clearfix"></div>
+			</section>
+			<section class="wander-viewAll">
+				<button>View all</button>
+			</section>
+		</section>
+		<section class ="wander-moreInfo">
+			<button>Looking for something else? Request a Call Back</button>
+		</section>
+		<footer class="wander-footerSection">
+			<div class="wander-footerImg">
+				<div class="wander-footerText">
+					<h3>pick the perfect  setting for your  love story</h3>
+					<div class="wander-footerContact">
+						<p>Call us at +91 9632563535</p>
+					</div>
+					<button>Plan a Getaway</button>
+				</div>
+			</div>
+		</footer>
+	</div> <!-- Wrapper Ends-->
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
